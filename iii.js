@@ -5,6 +5,7 @@ async function updateStats() {
   try {
     const response = await fetch(`${proxy}https://games.roblox.com/v1/games?universeIds=${universeId}`);
     const data = await response.json();
+    console.log("Ответ с API Roblox:", data);
 
     if (data && data.data && data.data.length > 0) {
       const game = data.data[0];
@@ -28,4 +29,5 @@ updateStats();
 
 
 setInterval(updateStats, 10000);
+
 
