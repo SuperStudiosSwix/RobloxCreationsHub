@@ -1,9 +1,10 @@
-const proxy = "https://corsproxy.io/?";
-const universeId = 109220432684145; 
+const proxy = "https://api.allorigins.win/raw?url=";
+const universeId = 109220432684145;
 
 async function updateStats() {
   try {
-    const response = await fetch(`${proxy}https://games.roblox.com/v1/games?universeIds=${universeId}`);
+    const url = encodeURIComponent(`https://games.roblox.com/v1/games?universeIds=${universeId}`);
+    const response = await fetch(proxy + url);
     const data = await response.json();
     console.log("Ответ с API Roblox:", data);
 
@@ -23,11 +24,6 @@ async function updateStats() {
   }
 }
 
-
-
 updateStats();
-
-
 setInterval(updateStats, 10000);
-
 
