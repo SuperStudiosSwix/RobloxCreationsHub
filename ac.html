@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scripts ✦ </title>
+    <link rel="stylesheet" href="eee.css">
+</head>
+<body>
+    <header id="hd">Scripts</header>
+    <H1 id="script1">Realistic first person, Put this script in Startet Gui <p id="script1">
+        local player = game.Players.LocalPlayer <br>
+local char = player.Character<br>
+local RunService = game:GetService("RunService")<br>
+
+char.Humanoid.CameraOffset = Vector3.new(0, 0, -1)<br>
+
+for i, v in pairs(char:GetChildren()) do<br>
+ if v:IsA("BasePart") and v.Name ~= "Head" then<br>
+
+  v:GetPropertyChangedSignal("LocalTransparencyModifier"):Connect(function()<br>
+   v.LocalTransparencyModifier = v.Transparency<br>
+  end)<br>
+
+  v.LocalTransparencyModifier = v.Transparency<br>
+
+ end<br>
+end<br>
+
+RunService.RenderStepped:Connect(function(step)<br>
+ local ray = Ray.new(char.Head.Position, ((char.Head.CFrame + char.Head.CFrame.LookVector * 2) - char.Head.Position).Position.Unit)<br>
+ local ignoreList = char:GetChildren()<br>
+
+ local hit, pos = game.Workspace:FindPartOnRayWithIgnoreList(ray, ignoreList)<br>
+
+ if hit then<br>
+  char.Humanoid.CameraOffset = Vector3.new(0, 0, -(char.Head.Position - pos).magnitude)<br>
+ else<br>
+  char.Humanoid.CameraOffset = Vector3.new(0, 0, -1)<br>
+ end<br>
+end)<br>
+    </p> <button id="copy" onclick="copytext1()">copy script</button></H1>
+    <script src="iii.js"></script>
+</body>
+</html>
