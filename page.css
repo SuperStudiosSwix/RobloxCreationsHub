@@ -1,32 +1,41 @@
 body {
 
-    background: radial-gradient(ellipse at center, #ffad33, #cf6604);
-    min-height: 100vh;
+    background: radial-gradient(ellipse at top left, #000000, #4a0583);
+    min-height: 200vh;
 }
+
 
 #divs {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: oblique;
     position: relative;
-    left: 185px;
+    left: 12%;
     display: grid;
-    gap: 10px;
+    gap: 2px;
     align-items: center;
-    top: 40px;
-    grid-template-columns: repeat(3, 335px)
+    top: 150px;
+    grid-template-columns: repeat(3, 280px);
+    background: radial-gradient(ellipse at top right, rgb(60, 1, 116), black);
+    border-radius: 60px;
+    width: 990px;
+    height: 560px;
+    align-items: center;
+    padding: 25px;
+
 }
 #place1 {
+        left: 80px;
     border-color: black;
     border-radius: 5px;
-    width: 300px;
-    height: 200px;
+    width: 250px;
+    height: 180px;
     padding: 10px;
     position: relative;
     top: 67px;
     text-align: center;
     color: white;
     align-items: center;
-    background: radial-gradient(ellipse at center, rgb(255, 90, 90), rgb(212, 8, 42));
+    background: radial-gradient(ellipse at top left, rgb(92, 43, 104), rgb(0, 0, 0));
     box-shadow: 5px 5px 5px 5px rgb(0, 0, 0,0.3);
     transition: transform 0.6s ease-in-out;
   
@@ -36,13 +45,14 @@ body {
 }
 
 #place5 {
+        left: 80px;
         border-color: black;
     border-radius: 5px;
-    width: 300px;
-    height: 200px;
+   width: 250px;
+    height: 180px;
     padding: 10px;
     position: relative;
-    top: 120px;
+    top: 5px;
     text-align: center;
     color: white;
     align-items: center;
@@ -50,13 +60,14 @@ body {
     box-shadow: 5px 5px 5px 5px rgb(0, 0, 0,0.3);
 }
 #place6 {
+        left: 80px;
             border-color: black;
     border-radius: 5px;
-    width: 300px;
-    height: 200px;
+width: 250px;
+    height: 180px;;
     padding: 10px;
     position: relative;
-    top: 120px;
+    top: 5px;
     text-align: center;
     color: white;
     align-items: center;
@@ -70,12 +81,13 @@ body {
 
 
 #place2 {
+        left: 80px;
       background: radial-gradient(ellipse at top right, rgb(0, 255, 115), rgb(85, 108, 238));
     box-shadow: 5px 5px 5px 5px rgb(0, 0, 0,0.3);
     border-color: black;
     border-radius: 5px;
-    width: 300px;
-    height: 200px;
+ width: 250px;
+    height: 180px;
     padding: 10px;
     position: relative;
     top: 67px;
@@ -83,12 +95,15 @@ body {
     align-items: center;
         transition: transform 0.6s ease-in-out;
 }
+
+
 #place3 {
+    left: 80px;
     background-color: rgb(189, 219, 245);
     border-color: black;
     border-radius: 5px;
-    width: 300px;
-    height: 200px;
+width: 250px;
+    height: 180px;
     padding: 10px;
     position: relative;
     top: 67px;
@@ -99,14 +114,15 @@ body {
         transition: transform 0.6s ease-in-out;
 }
 #place4 {
+        left: 80px;
      background-color: rgb(189, 219, 245);
     border-color: black;
     border-radius: 5px;
-    width: 300px;
-    height: 200px;
+ width: 250px;
+    height: 180px;
     padding: 10px;
     position: relative;
-    top: 120px;
+     top: 5px;
     text-align: center;
     align-items: center;
        background: radial-gradient(ellipse at top right, rgb(255, 115, 0), rgb(230, 52, 206));
@@ -123,7 +139,7 @@ body {
 }
 
 #backhead {
-    background: linear-gradient(to bottom, rgb(255, 81, 0), rgb(245, 209, 7));
+    background: linear-gradient(to bottom, rgb(65, 34, 136), rgb(0, 0, 0));
     width: 100%;
    border-radius: 60px;
     height: 60px;
@@ -133,7 +149,7 @@ body {
 #tgk {
     position: fixed;
     size: 70px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     left: 40px;
     text-decoration: none;
     font-style: normal;
@@ -143,13 +159,14 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: fixed;
     font-size: 40px;
-    left: 500px;
+    left: 14%;
+    color: white;
 }
 
 #dis {
     position: fixed;
     font-size: 20px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     left: 40px;
     top: 30px;
     text-decoration: none;
@@ -160,8 +177,8 @@ body {
     width: 50px;
     height: 50px;
     position: fixed;
-    left: 440px;
-    top: 15px;
+    left: 10%;
+    top: 3px;
     border-radius: 50px;
 }
 #bbb {
@@ -169,10 +186,83 @@ body {
     left: 500px;
     top: 35px;
 }
-#script {
+
+#home {
+    transition: transform 0.5s ease;
+}
+#home:hover {
+transform: scale(1.1);
+}
+
+#frm {
+    transition: transform 0.5s ease;
+}
+#frm:hover {
+transform: scale(1.1);
+}
+#menu {
     position: fixed;
-    right: 10px;
-    font-size: 25px;
+    top: 5px;
+    height: 10vh;
+    width: 205vh;
+    border-radius: 100px;
+    align-items: center;
+    text-align: left;
+    background-color: #16003886;
+    backdrop-filter: blur(10px);
+    transition: transform 1s ease;
+    animation: sss 2s ease;
+}
+#menu:hover {
+transform: scale(1.03);
+ animation: sss 0.4s ease-in;
+
+}
+#Home {
+font-style: oblique;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: black;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    font-size: 21px;
+   
+    position: fixed;
+    right: 34%;
+   margin-top: 5px;
+}
+
+#script {
+    font-style: oblique;
+
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+font-size: 21px;
+    width: 90px;
+    position: fixed;
+    right: 19%;
+   margin-top: 5px;
+}
+
+#script:hover {
+    font-style: unset;
+    cursor: default;
+}
+
+#forum {
+    font-style: oblique;
+
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    font-size: 21px;
+    width: 90px;
+    position: fixed;
+    right: 27%;
+   margin-top: 5px;
+}
+@keyframes sss {
+    from{
+    width: 60px
+    };
+    to{width: 75px};
 }

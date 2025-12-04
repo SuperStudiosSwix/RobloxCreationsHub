@@ -30,10 +30,24 @@ RunService.RenderStepped:Connect(function(step)
 end)`,];
 var s1 = document.getElementById('script1')
 var textc1 = document.getElementById('script1');
-var btn1 = document.getElementById('copy')
+var btn1 = document.getElementById('copy');
+
 function copytext1() {
-   
 navigator.clipboard.writeText(cp1[0]);
 btn1.innerText = "copied👌"
 s1.style.backgroundColor = 'green'
 };
+
+function yyy() {
+window.location.href = "games.html"
+};
+
+function uuu() {
+window.location.href = "ac.html"
+};
+
+function iii() {
+window.location.href = "forumpage.html"
+};
+
+
