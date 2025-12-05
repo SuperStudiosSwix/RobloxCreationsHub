@@ -251,7 +251,7 @@ font-size: 21px;
     position: absolute;
  
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    size: 50px;
+    size: 35px;
     width: 70px;
    right: 10%;
     color: white;
@@ -275,3 +275,4 @@ font-size: 21px;
     to{width: 75px};
 
 }
+
