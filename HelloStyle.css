@@ -13,7 +13,11 @@ background: radial-gradient(ellipse at top left, #050d83, black);
     font-size: 50px;
     color: rgb(255, 255, 255);
     position: relative;
+  
 
+}
+#Hello.hide {
+    opacity: 0;
 }
 #Hello::before {
 margin-left: 35%;
@@ -30,7 +34,7 @@ margin-left: 35%;
     left: 35%;
     top: 10%;
 }
-#check {
+.check {
     opacity: 0;
     animation: OpenHello 2s ease forwards;
     font-size: 50px;
@@ -81,6 +85,7 @@ margin-left: 35%;
    border-radius: 5px;
    border-style: hidden;
 }
+
 #None {
       left: 35%;
          opacity: 0;
@@ -110,7 +115,7 @@ margin-left: 35%;
         transform: translateY(20px);
     }
     50% {
-        opacity: 1;
+        opacity: 0.5;
     }
     100% {
         opacity: 1;

@@ -9,29 +9,57 @@
 <body>
   
     <h1 id="Hello"></h1>
+    <h2 id="EnterNameText" style="opacity: 0;">The last step, Enter your name</h2>
+<input type="text" id="EnterName" placeholder="Enter Your Name" disabled style="opacity: 0;">
+
+
+
     <div id="roles"></div>
     <div id="scripter">Scripter💻 
-      <input type="checkbox" id="check">
+      <input type="checkbox" class="check">
     </div>
       <div id="Builder">Builder🛠
-    <input type="checkbox" id="check">
+      <input type="checkbox" class="check">
     </div>
       <div id="Animator">Animator🎬 
-   <input type="checkbox" id="check">
+      <input type="checkbox" class="check">
     </div>
       </div>
       <div id="None">Player🎮 
-       <input type="checkbox" id="check">
+      <input type="checkbox" class="check">
     </div>
      </div>
      <button id="ready" onclick="ii()">Ready</button>
     <script>
-      var btn = document.getElementById('ready')
+      var btn = document.getElementById('ready');
+      var InputName = document.getElementById('EnterName');
+      var HelloText = document.getElementById('Hello')
+      const texthello = document.getElementById('EnterNameText')
       function ii() {
+
+InputName.disabled = false
+InputName.style.opacity = '1'
+InputName.style.animation = "OpenHello 2s ease forwards"
+InputName.style.fontSize = '35px'
+InputName.style.backgroundColor = 'rgb(255, 255, 255,0.1)'
+InputName.style.borderRadius = '5px'
+InputName.style.borderStyle = 'none'
+InputName.style.position = 'relative'
+InputName.style.left = '35%'
+texthello.style.position = 'relative'
+texthello.style.left = '35%'
+texthello.style.opacity = '1'
+HelloText.classList.toggle('hide');
+btn.style.backgroundColor = 'white'
+if (InputName.value == "") {
+InputName.placeholder = "Enter name!"
+} else {
+document.cookie = "Name=" + InputName.value + "; max-age=360; path=/";
+console.log(document.cookie);
 window.location.href = "Home.html"
 };
-
+};
+    
     </script>
 </body>
-
 </html>

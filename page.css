@@ -247,7 +247,15 @@ font-size: 21px;
     font-style: unset;
     cursor: default;
 }
-
+#name {
+    position: absolute;
+ 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    size: 50px;
+    width: 50px;
+   right: 8%;
+    color: white;
+}
 #forum {
     font-style: oblique;
 
