@@ -30,7 +30,11 @@
     </div>
      </div>
      <button id="ready" onclick="ii()">Ready</button>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
     <script>
+  if (Cookies.get('Name')) {
+    window.location.href = "Home.html";
+  }
       var btn = document.getElementById('ready');
       var InputName = document.getElementById('EnterName');
       var HelloText = document.getElementById('Hello')
@@ -54,7 +58,7 @@ btn.style.backgroundColor = 'white'
 if (InputName.value == "") {
 InputName.placeholder = "Enter name!"
 } else {
-document.cookie = "Name=" + InputName.value + "; max-age=360; path=/";
+document.cookie = "Name=" + InputName.value + "; max-age=13,147,680,000; path=/";
 console.log(document.cookie);
 window.location.href = "Home.html"
 };
@@ -62,4 +66,5 @@ window.location.href = "Home.html"
     
     </script>
 </body>
+
 </html>
