@@ -263,7 +263,7 @@ font-size: 21px;
     width: 50px;
    right: 8%;
     color: white;
-    top: 2%;
+    top: 0%;
 }
 #forum {
     font-style: oblique;
@@ -282,4 +282,5 @@ font-size: 21px;
     width: 60px
     };
     to{width: 75px};
+
 }
