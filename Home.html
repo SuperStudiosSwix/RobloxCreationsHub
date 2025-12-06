@@ -21,7 +21,7 @@
           <div id="place6">6</div>
     </div>
     <div id="menu">
-        <b id="thetext">Roblox creations hub  <a id="dis" href="https://discord.gg/DsBhDFsj">discord</a></b>  <b><a id="tgk" href="https://t.me/SuperStudioss">Telegram</a></b>   <img  id="logo"  src="fpfp.png" width="30">  <h3 id="name">loading</h3> <p id="bbb">This site is not affiliated with Roblox Corporation</p> 
+        <b id="thetext">Roblox creations hub  <a id="dis" href="https://discord.gg/DsBhDFsj">discord</a></b>  <b><a id="tgk" href="https://t.me/SuperStudioss">Telegram</a></b>   <img  id="logo"  src="fpfp.png" width="30">  <h3 id="name">loading...</h3> <h3 id="Rank">Loading-Rank</h3><p id="bbb">This site is not affiliated with Roblox Corporation</p> 
                    <p onclick="uuu()" id="script">Scripts</p>
                         
             
@@ -29,10 +29,13 @@
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
     <script>  
     var Account = document.getElementById('name')
+    var Rank = document.getElementById('Rank')
     var PlayerName = Cookies.get('Name');
+    var RankLoaded = Cookies.get('Role')
     Account.textContent = ""
-    Account.textContent = 'Account: ' + PlayerName
+    Account.textContent = PlayerName
+       Rank.textContent = ""
+    Rank.textContent = RankLoaded
     </script>
 </body>
-
 </html>

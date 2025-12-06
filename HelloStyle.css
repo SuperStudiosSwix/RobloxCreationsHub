@@ -86,7 +86,7 @@ margin-left: 35%;
    border-style: hidden;
 }
 
-#None {
+#Player {
       left: 35%;
          opacity: 0;
     animation: OpenHello 2s ease forwards;

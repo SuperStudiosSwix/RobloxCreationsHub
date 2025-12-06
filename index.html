@@ -25,16 +25,12 @@
       <input type="checkbox" class="check">
     </div>
       </div>
-      <div id="None">Player🎮 
+      <div id="Player">Player🎮 
       <input type="checkbox" class="check">
     </div>
      </div>
      <button id="ready" onclick="ii()">Ready</button>
-    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
     <script>
-  if (Cookies.get('Name')) {
-    window.location.href = "Home.html";
-  }
       var btn = document.getElementById('ready');
       var InputName = document.getElementById('EnterName');
       var HelloText = document.getElementById('Hello')
@@ -58,13 +54,20 @@ btn.style.backgroundColor = 'white'
 if (InputName.value == "") {
 InputName.placeholder = "Enter name!"
 } else {
-document.cookie = "Name=" + InputName.value + "; max-age=13,147,680,000; path=/";
+document.cookie = "Name=" + InputName.value + "; max-age=360; path=/";
 console.log(document.cookie);
 window.location.href = "Home.html"
 };
 };
+const checks = document.querySelectorAll('.check');
+
+checks.forEach(check => {
+    check.addEventListener('change', () => {
+        const parent = check.closest('div'); 
+    document.cookie = "Role=" + parent.id + "; max-age=36000000000000000000000000; path=/";
+    });
+});
     
     </script>
 </body>
-
 </html>

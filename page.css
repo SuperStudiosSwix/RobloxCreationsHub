@@ -251,10 +251,19 @@ font-size: 21px;
     position: absolute;
  
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    size: 35px;
-    width: 70px;
-   right: 10%;
+    size: 50px;
+    width: 50px;
+   right: 8%;
     color: white;
+}
+#Rank {
+        position: absolute;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    size: 50px;
+    width: 50px;
+   right: 8%;
+    color: white;
+    top: 2%;
 }
 #forum {
     font-style: oblique;
@@ -273,6 +282,4 @@ font-size: 21px;
     width: 60px
     };
     to{width: 75px};
-
 }
-
